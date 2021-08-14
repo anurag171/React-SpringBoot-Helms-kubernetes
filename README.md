@@ -1,4 +1,3 @@
-
 # Greetings app
 
 The project consist of a **frontend sevice called as helloapp** and **backend greeting application**. 
@@ -32,19 +31,21 @@ where name is environment variable
 
 **Curl backend service output**
 
-  https://github.com/anurag171/greetingsfinal/blob/master/screenshots/curl-backend.png
+  ![curl-backend](https://user-images.githubusercontent.com/59208873/129453113-e039ef7d-94e9-4d37-8b67-34f311b6eeee.png)
 
 
 
 **Frontend service**
 
-https://github.com/anurag171/greetingsfinal/blob/master/screenshots/FrontEndWithBackend.PNG
-
+![FrontEndWithBackend](https://user-images.githubusercontent.com/59208873/129453131-371159b0-034e-4cc5-935a-685adf51af85.PNG)
 
 
 **Application Deployment on Kubernetes**
 
-https://github.com/anurag171/greetingsfinal/blob/master/screenshots/commandpromptkubectl.PNG
+![commandpromptkubectl](https://user-images.githubusercontent.com/59208873/129453139-a175c6d0-4cdf-4c74-8511-05b009414048.PNG)
+
+
+![minikubedashboard](https://user-images.githubusercontent.com/59208873/129453133-dd22b252-1d35-41c2-ae18-1b01f7cfd825.PNG)
 
 
 ## Authors
