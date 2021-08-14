@@ -1,0 +1,41 @@
+.greet {
+    margin: 5rem auto;
+    box-shadow: 1 1px 8px rgba(0, 0, 0, 0.2);
+    width: 40rem;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    background-color: #f4f0fa;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: #e2d3d0;
+    margin: 1;
+    font-size: 2rem;
+    padding: auto;
+    position: fixed;
+    left: 40%;
+    top: 10%;
+}
+
+label {
+    font: bold;
+    font-style: italic;
+    font-weight: bolder;
+    cursor: pointer;
+    size: 2px;
+    display: inline-flex;
+    background-color: #dbb1d8;
+    border: 1px solid #151516;
+    color: rgb(22, 20, 20);
+    padding: 0.5rem 1.5rem;
+    border-radius: 6px;
+    text-align: center;
+    position: fixed;
+    left: 45%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    height: max-content;
+}

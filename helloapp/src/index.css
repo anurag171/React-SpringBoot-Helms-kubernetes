@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: #0e0b11;
+    background-color: #1b72e4;
+    align-self: center;
+    background-origin: padding-box;
+}
+
+button:hover,
+button:active {
+    background-color: #95ac14;
+    border-color: #90ac14;
+}
