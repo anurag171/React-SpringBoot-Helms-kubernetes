@@ -71,27 +71,8 @@ Add badges from somewhere like: [shields.io](https://shields.io/)
 | Example Color | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
 
 
-## Contributing
 
-Contributions are always welcome!
-
-See `contributing.md` for ways to get started.
-
-Please adhere to this project's `code of conduct`.
-
-  
 ## Deployment
-
-To deploy this project run
-
-```bash
-  npm run deploy
-```
-Run the project locally you need to have pulsar running on your docker. You can run following command into command line to start apachae pulsar
-
-docker run -d -it -p 6650:6650 -p 8080:8080 -v $PWD/data:/pulsar/data apachepulsar/pulsar:latest bin/pulsar standalone
-
-Once done
 
 Clone the project into your favourite ide
 ```bash
@@ -138,25 +119,17 @@ Go to the project directory greetingsfinal
 
 To run this project, you will need to add the following environment variables to your .env file
 
-`API_KEY`
+`service.greetings.name`
 
-`ANOTHER_API_KEY`
-
-  
-## Features
-
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
-- Cross platform
+`service.greetings.date-format`
 
   
 ## Feedback
 
-If you have any feedback, please reach out to us at fake@fake.com
+If you have any feedback, please reach out to us at anurag171@gmail.com
 
   
 ## 🚀 About Me
-I'm a full stack developer...
+
 
   
