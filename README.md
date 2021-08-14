@@ -15,7 +15,7 @@ environment variable ${service.greetings.name}
   GET //greetings 
 ```
 
-Returns **'14/08/2021 13:14 Hello $name'**
+Returns **'DD/MM/YYYY HH:mm Hello $name'**
 where name is environment variable
 
 
@@ -80,7 +80,7 @@ Go to the project directory greetingsfinal
   - Run command **kubectl apply -f greet-service-deployment.yml**
   - Go to /greetingsfinal/helloapp/Kubernetes folder**
   - Run command **kubectl apply -f helloapp-deployment.yaml**
-  - Run command minikube tunnel**
+  - Run command **minikube tunnel**
   - In another powershell or command line run command **minikube dashboard**
   - You will see all pods , services and replicas up and green as shown in screenshot
   - helloapp can be accessed on **http://127.0.0.1:3000/**
