@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: greet-service-deployment
+  labels:
+    app: greet-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: greet-service
+  template:
+    metadata:
+      labels:
+        app: greet-service
+    spec:
+      containers:
+        - name: greet-service
+          image: am17docker/greet-service
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+          env:
+            - name: service.greetings.name
+              value: "Anurag"
+            - name: server.port
+              value: "8080"
+            - name: service.greetings.date-format
+              value: "dd/MM/yyyy HH:mm"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: greet-service-service
+spec:
+  selector:
+    app: greet-service
+  type: LoadBalancer
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080

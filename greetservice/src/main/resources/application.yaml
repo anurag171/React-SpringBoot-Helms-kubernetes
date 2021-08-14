@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: greetings
+server:
+  port: 8081
+service:
+  greetings:
+    name: Anurag
+    date-format: dd/MM/yyyy HH:mm
