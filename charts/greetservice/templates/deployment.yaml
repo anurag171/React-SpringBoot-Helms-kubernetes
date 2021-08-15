@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "greetservice.fullname" . }}
+  labels:
+    {{- include "greetservice.labels" . | nindent 4 }}
+spec:  
+  replicas: {{ .Values.replicaCount }} 
+  selector:
+    matchLabels:
+      {{- include "greetservice.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:    
+      labels:
+        {{- include "greetservice.selectorLabels" . | nindent 8 }}
+    spec:     
+      containers:
+        - name: {{ .Chart.Name }}          
+          image: "{{ .Values.image.repository }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: {{ .Values.container.containerPort }}
+              protocol: TCP
+          env:
+            - name: service.greetings.name
+              value: {{ .Values.container.greetingsName }}
+            - name: server.port
+              value: "8080"
+            - name: service.greetings.date-format
+              value: {{ .Values.container.greetingsDateformat }}        
