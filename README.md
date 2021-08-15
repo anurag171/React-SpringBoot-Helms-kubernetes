@@ -65,6 +65,12 @@ Go to the project directory greetingsfinal
   - **docker build -t <your git user>/helloapp .**
   - **docker push <your git user>/helloapp**
   
+  
+  **Note:** I have already pushed the docker **images** on **https://hub.docker.com/** as shown below. I have used same image in my deployments
+  
+  ![dockerhub](https://user-images.githubusercontent.com/59208873/129470530-2c143dd7-08dd-4674-9d4c-30e8379a86fd.png)
+
+  
   ## Run on Docker
   - **docker-compose up**
   
