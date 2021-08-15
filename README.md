@@ -79,7 +79,7 @@ Go to the project directory greetingsfinal
   - **docker run -d -it -p 3000:3000 <your git user>/helloapp**
   - **docker run -d -it -p 8080:8080 <your git user>/greet-service**
 
-  ## Run on Kubernetes 
+  ## Run on Kubernetes (Through Deployment.yaml in Kuebernates folder)
 
   - Open powershell or command line**
   - Go to /greetingsfinal/greetservice/Kubernetes folder**
@@ -91,6 +91,28 @@ Go to the project directory greetingsfinal
   - You will see all pods , services and replicas up and green as shown in screenshot
   - helloapp can be accessed on **http://127.0.0.1:3000/**
  -  We can curl the backend service on **http://127.0.0.1:8080/**
+  
+ ## Run on Kubernetes (Helm chart)
+  - Open powershell or command line**
+  - Go to /greetingsfinal/charts folder **
+  - Run command **helm install my-helloapp-rel-1 helloapp** 
+  - Run command **helm install my-greetservice-rel-1 greetservice**
+  - Run command **helm list -a**
+  - Run command **minikube tunnel**
+  - In another powershell or command line run command **minikube dashboard**
+  - You will see all pods , services and replicas up and green as shown in screenshot
+  - helloapp can be accessed on **http://127.0.0.1:3000/**
+ -  We can curl the backend service on **http://127.0.0.1:8080/**
+  
+ ## Images helm chart
+  
+  ![final-deployment-helm](https://user-images.githubusercontent.com/59208873/129474718-064d65e3-ea05-4c17-96d3-9d8b3b5d9bfd.PNG)
+
+  
+  
+  ![kubernetes-helm-deployment](https://user-images.githubusercontent.com/59208873/129474789-e5eba6af-0e1c-4b4b-aee6-275959c05fd3.png)
+  
+  
   
 ## Documentation
 
