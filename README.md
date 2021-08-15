@@ -135,5 +135,8 @@ If you have any feedback, please reach out to us at anurag171@gmail.com
   
 ## 🚀 About Me
 
-
+I am passionately curious and excited about transforming the digital banking space with my software abilities. These pursuits challenge so many aspects of my intellect like creativity, organization, sequential processing, problem-solving, and keep my brain ticking and never quench my thirst to create innovation.
+  
+ Visit to know more about me
+ https://www.linkedin.com/in/anurag-mishra-267559115/
   
