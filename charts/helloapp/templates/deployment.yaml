@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "helloapp.fullname" . }}
+  labels:
+    {{- include "helloapp.labels" . | nindent 4 }}
+spec:  
+  replicas: {{ .Values.replicaCount }} 
+  selector:
+    matchLabels:
+      {{- include "helloapp.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:     
+      labels:
+        {{- include "helloapp.selectorLabels" . | nindent 8 }}
+    spec:         
+      containers:
+        - name: {{ .Chart.Name }}         
+          image: "{{ .Values.image.repository }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: {{ .Values.container.containerPort }}
+              protocol: TCP     
