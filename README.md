@@ -71,7 +71,7 @@ where name is environment variable
 
 Clone the project into your favourite ide
 ```bash
-  git clone hhttps://github.com/anurag171/greetingsfinal
+  git clone https://github.com/anurag171/greetingsfinal
 ```
 ## General Deployment Steps
 Go to the project directory greetingsfinal
