@@ -9,7 +9,7 @@ environment variable ${service.greetings.name}
 ## Documentation
 
 - **helloapp** 
-   This service is written in react and is a single pade servuce which on page load calls the backend url
+   This service is written in react and is a single page app which on page load calls the backend url
    
    
 - **greetservice**
