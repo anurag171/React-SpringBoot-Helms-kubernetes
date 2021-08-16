@@ -6,13 +6,32 @@ The helloapp welcome screen on loading calls greeting service which return it th
 environment variable ${service.greetings.name}
 
 
+## Documentation
+
+- **helloapp** 
+   This service is written in react and is a single pade servuce which on page load calls the backend url
+   
+   
+- **greetservice**
+  This service is written in spring boot reactive as returns a Mono of string.
+
+  
+## Environment Variables
+
+The following environment variables are present in **greetingsfinal/greetservice/src/main/resources/application.yaml** & **greetingsfinal/greetservice/Kubernetes/greet-service-deployment.yml**. You can change at any place
+
+`service.greetings.name`
+
+`service.greetings.date-format`
+
+
 
 ## API Reference
 
 #### Get greetings
 
 ```http
-  GET //greetings 
+  GET /greetings 
 ```
 
 Returns **'DD/MM/YYYY HH:mm Hello $name'**
@@ -81,10 +100,10 @@ Go to the project directory greetingsfinal
 
   ## Run on Kubernetes (Through Deployment.yaml in Kuebernates folder)
 
-  - Open powershell or command line**
-  - Go to /greetingsfinal/greetservice/Kubernetes folder**
+  - Open **powershell or command line**
+  - Go to **/greetingsfinal/greetservice/Kubernetes folder**
   - Run command **kubectl apply -f greet-service-deployment.yml**
-  - Go to /greetingsfinal/helloapp/Kubernetes folder**
+  - Go to **/greetingsfinal/helloapp/Kubernetes folder**
   - Run command **kubectl apply -f helloapp-deployment.yaml**
   - Run command **minikube tunnel**
   - In another powershell or command line run command **minikube dashboard**
@@ -93,8 +112,8 @@ Go to the project directory greetingsfinal
  -  We can curl the backend service on **http://127.0.0.1:8080/**
   
  ## Run on Kubernetes (Helm chart)
-  - Open powershell or command line**
-  - Go to /greetingsfinal/charts folder **
+  - Open **powershell or command line**
+  - Go to **/greetingsfinal/charts folder**
   - Run command **helm install my-helloapp-rel-1 helloapp** 
   - Run command **helm install my-greetservice-rel-1 greetservice**
   - Run command **helm list -a**
@@ -110,22 +129,9 @@ Go to the project directory greetingsfinal
 
   
   
-  ![kubernetes-helm-deployment](https://user-images.githubusercontent.com/59208873/129474789-e5eba6af-0e1c-4b4b-aee6-275959c05fd3.png)
+  ![kubernetes-helm-deployment](https://user-images.githubusercontent.com/59208873/129474789-e5eba6af-0e1c-4b4b-aee6-275959c05fd3.png)  
   
-  
-  
-## Documentation
 
-[Documentation](https://linktodocumentation)
-
-  
-## Environment Variables
-
-The following environment variables are present in **greetingsfinal/greetservice/src/main/resources/application.yaml** & **greetingsfinal/greetservice/Kubernetes/greet-service-deployment.yml**. You can change at any place
-
-`service.greetings.name`
-
-`service.greetings.date-format`
 
   
 ## Feedback
